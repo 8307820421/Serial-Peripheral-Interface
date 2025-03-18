@@ -29,7 +29,19 @@ This folder contain the simple SPI master and slave interface with top module co
      
      output [7:0] dout -------->  Data receiving from master.
      
-     output done       -------->  Acknowedge that output received.
+     output done       -------->  Acknowedge that output received
+
+# PIN DESCRIPTION of SPI PROTOCOL (TOP MODULE) :- To connect master to slave.
+
+   input clk       ------> global pin(clock).
+   
+   input rst       ------> global pin(reset).
+   
+   input tx_en     ------> global pin(intiate the transaction).
+   
+   output [7:0] dout-----> 8 bit data output.
+   
+   output done     ------> acknoweldge to receive the output.
      
 # 2) DAISY CHAIN FOLDER :-
 
