@@ -19,6 +19,18 @@ This folder contain the simple SPI master and slave interface with top module co
      output wire sclk    -----> This act as sclk pin that will generate in serial periheral interface protocol to operate the master and 
                                 slave.
 
+# PIN DESCRIPTION of SPI PROTOCOL (SLAVE):- Based upon the master inerface.
+
+     input sclk        -------->  This pin controlled through master .
+     
+     input mosi        ---------> This also connected through master.
+     
+     input  ss         ---------> This is also connected through master as slave select plays key role to take the data from master.
+     
+     output [7:0] dout -------->  Data receiving from master.
+     
+     output done       -------->  Acknowedge that output received.
+     
 # 2) DAISY CHAIN FOLDER :-
 
 Here we have developed the single master with single slave for daisy chain configuartion that produce high throughput but have
