@@ -49,6 +49,6 @@ This folder contain the simple SPI master and slave interface with top module co
 Here we have developed the single master with single slave for daisy chain configuartion that produce high throughput but have
 latnecy of 8 clock cycle from master to slave and this latency of 8 clock cycle will increase if we assume two slave by multiple of 8.
 
-# THE Daisy Chain folder also contain the master and slave with top module interface . And the description is given inside into it.
+# The Daisy Chain folder also contain the master and slave with top module interface . And the description is given inside into it.
 
 
