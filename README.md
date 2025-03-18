@@ -4,7 +4,7 @@
 
 This folder contain the simple SPI master and slave interface with top module connectivity by consdering 100 mhz system clock .
 
-# PIN DESCRIPTION of SPI PROTOCOL :-
+# PIN DESCRIPTION of SPI PROTOCOL (MASTER):-
 
      input fpga_clk   -----> Here we suppose the 100mhz system clock for entire system.
      
