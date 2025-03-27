@@ -1,8 +1,5 @@
-# SINGLE MASTER SINGLE SLAVE INTERFACE VIA SPI:-
------------------------------------------------
-
 /*------------------------------------------------------SINGLE SLAVE SINGLE MASTER INTERFACE--------------------------------------------*/
-/*
+
 daisy_chain_master MODULE :-> 
 -----------------------------
 
@@ -24,20 +21,20 @@ daisy_chain_master MODULE :->
     output sdo       ----> output serial data that goes as input to slave.
     output [7:0] dout ---> this will cobmbine the output from slave(or input sdi)  (for 8 clock pulse) in wait state.
     
-*/
+
 -------------------------------------------------------------------------------------------------------------------------------------------
-/*
+
 # daisy_chain_slave MODULE :->
 ----------------------------
    Here In the waveform when you observed the output in slave then from the 9th clock pulse
    You will get the data as there is 8 clock cycle latency required to collect the data.
    
 # Port Description :->
-  -------------------- 
+--------------------------- 
 
     input sclk -----> This controlled by master.
     input cs   -----> This also controlled by master (here this will intially high then up to 8 clock pulse  goes  low to receive the data 
                       or send the data)
     input sdi, ------> This taken the data from the master sdo (serial data output).
     output sdo  ------> This access the data from sdi and send to master.
-*/
+
